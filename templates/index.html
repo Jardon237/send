@@ -1,0 +1,67 @@
+{% extends 'base.html'%}
+{% block title%} Home {% endblock title%}
+{% load static%}
+
+{% block content%}
+<div class="card-body">
+    <div class="row">
+        <div class="col-md-3">
+            <a class="text-decoration-none text-dark" href="{% url 'send_me-sent'%}">
+                <div class="card my-card shadow text-center p-3">
+                    <h4>Sent<i class="fas fa-users"></i></h4>
+                    <h3>4</h3>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <a class="text-decoration-none text-dark" href="{% url 'send_me-recieved'%}">
+                <div class="card my-card shadow text-center p-3">
+                    <h4>Received <i class="fas fa-box"></i></h4>
+                    <h3>4</h3>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <a class="text-decoration-none text-dark" href="{% url 'send_me-branches'%}">
+                <div class="card my-card shadow text-center p-3">
+                    <h4>Branches <i class="fas fa-shipping-fast"></i></h4>
+                    <h3>4</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-3">
+            <a class="text-decoration-none text-dark" href="staff.html">
+                <div class="card my-card shadow text-center p-3">
+                    <h4>Sent<i class="fas fa-users"></i></h4>
+                    <h3>4</h3>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <a class="text-decoration-none text-dark" href="product.html">
+                <div class="card my-card shadow text-center p-3">
+                    <h4>Received <i class="fas fa-box"></i></h4>
+                    <h3>4</h3>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <a class="text-decoration-none text-dark" href="order.html">
+                <div class="card my-card shadow text-center p-3">
+                    <h4>Branches <i class="fas fa-shipping-fast"></i></h4>
+                    <h3>4</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+       
+</div>
+
+{% endblock content%}
